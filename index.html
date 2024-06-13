@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammy's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2540e1a8ce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1><span>S.</span>HOQUE</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>BSc Computer Science Student</p>
+            <h1>Hi, I'm <span>Sammy Hoque</span><br>Studying at University of Leicester</h1>
+        </div>
+    </div>
+</div>
+<!--------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/Images/IMG_2736 18.16.52.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="bio">Hi, I'm Sammy Hoque and I'm a computer science student at the University of Leicester. I find myself constantly drawn to the dynamic world of computer science. 
+                    What started as a childhood fascination with video games evolved into having an intrest for understanding the workings of technology. For me, computer science 
+                    is where my creativity and problem-solving skills improves. With each line of code I write, I'm one step closer to turning my passion into a career as a software engineer.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="lang">
+                            <div class="lang-title">Programming Languages</div> <div class="skill-container">
+                                <div class="skill">Python<i class="fa-brands fa-python"></i></div>
+                                <div class="skill">HTML<i class="fa-brands fa-html5"></i></div>
+                                <div class="skill">CSS<i class="fa-brands fa-css3-alt"></i></div>
+                                <div class="skill">JavaScript<i class="fa-brands fa-js"></i></div>
+                                <div class="skill">Java<i class="fa-brands fa-java"></i></div>
+                            </div>    
+                        </div>
+                        <!-- <ul>
+                            <li><span>Python</span> <i class="fa-brands fa-python"></i></li> 
+                            <li><span>HTML</span> <i class="fa-brands fa-html5"></i></li>
+                            <li><span>CSS</span> <i class="fa-brands fa-css3-alt"></i></li>
+                            <li><span>Java</span> <i class="fa-brands fa-java"></i></li>
+                            <li><span>JavaScipt</span> <i class="fa-brands fa-java"></i></li>
+                        </ul> -->
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <div class="education-container">
+                            <div class="uni-container">
+                                <img src="/Images/unnamed.webp">
+                                <div class="uni-text">
+                                    <div class="titles">University of Leicester</div>
+                                    <div class="course">BSc Computer Science • 3 Years + Industry Year</div> 
+                                </div>
+                            </div>
+                            <div class="modules">
+                                <div class="module-title">Modules</div> <div class="module-container">
+                                    <div class="module">Computing Fundamentals</div> 
+                                    <div class="module">Programming Fundamentals</div> 
+                                    <div class="module">Mathematics Fundamentals</div> 
+                                    <div class="module">Computer Architecture</div> 
+                                    <div class="module">Object Oriented Programming</div> 
+                                    <div class="module">Requirements Engineering and Professional Practice</div> 
+                                    <div class="module">Algorithms, Data Structures and Advanced Programming</div> 
+                                    <div class="module">Foundations of Computation</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <ul>
+                            <li><span>University:</span><br>University Of Leicester</li>
+                            <li><span>Course:</span><br>Computer Science</li>
+                            <li><span>Qualification:</span><br>BSc</li>
+                            <li><span>Duration:</span><br>3 years full-time with additional Industry Year</li>
+                        </ul> -->
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------Projects----------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Work/Learning Experience</h1>
+        <div class="projects-list">
+            <div>
+                <h2>PwC: Flyin Start</h2>
+                <p>
+                    'Flying Start' was a pioneering program launched by PwC in Technology, offering students a unique pathway into the world of technology and professional services. This innovative educational initiative bridged academic learning and practical application, providing a comprehensive industry understanding.<span id="dots">...</span><span id="more" style="display: none;"> During my time in the program, I gained invaluable insights into Computer Science and Software Engineering. Combining classroom instruction, hands-on projects, and real-world experience equipped me with essential theoretical knowledge and practical skills.
+
+                        Additionally, exposure to PwC’s projects and professional mentorship highlighted technology's critical role in solving business problems. 'Flying Start' was a transformative experience that prepared me for a successful tech career.</span></p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+            <div>
+                <h2>Bright Network: IEUK</h2>
+                <p>I was fortunetly selected to participate in a prestigious four-day virtual programme focused on technology. This allowed me to engage with a community of fellow attendees on the Guild platform to collaborate, share insights, and prepare for the programme. After completion I gained in-depth knowledge of <span id="dots1">...</span><span id="more1" style="display: none;"> current technological trends and innovations through interactive sessions and expert-led discussions, not only that but also Developed essential skills and expanded professional network by interacting with industry leaders and peers.
+                </p>
+                <button onclick="myFunction1()" id="myBtn1">Read more</button>
+            </div>
+            <div>
+                <h2>CodeCademy</h2>
+                <p>I have strengthened my knowledge on Python 3 and Java on Codecademy, leveraging their comprehensive, interactive courses to deepen my understanding of these powerful programming languages. Through Codecademy's structured lessons, I have gained practical experience in writing clean, efficient code, and <span id="dots2">...</span><span id="more2" style="display: none;"> solving complex problems. Python 3's versatility and ease of use have allowed me to quickly prototype ideas and develop a strong foundation in programming concepts. Meanwhile, learning Java has enhanced my understanding of object-oriented programming and provided insights into building robust, scalable applications. This hands-on learning approach has significantly improved my coding skills, preparing me for real-world software development challenges and advancing my journey in computer science and I will continue completing more courses in the future.</p>
+                <button onclick="myFunction2()" id="myBtn2">Read more</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/Images/Can you get all the questions right.jpg">
+                <div class="layer">
+                    <h3>Quiz App</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <a href="../Quiz/"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Images/SnakeGame.jpg">
+                <div class="layer">
+                    <h3>Work 2</h3>
+                    <p>second project</p>
+                    <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Images/ChatBot.jpg">
+                <div class="layer">
+                    <h3>Work 3</h3>
+                    <p>third project</p>
+                    <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>hoquesammy1@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i>+44 7400 298548</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sammyhoque"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/Images/Sammy-Hoque- CS CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sammy.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemeu.style.right = "0"
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px"
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyaMkvcSQAowK2ScQ0F9_ukdLubcivQ36JLbGhnLArKBwvl4z6cjb93jIBr_5NaqAQVNw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Show more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Show less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    function myFunction1() {
+      var dots = document.getElementById("dots1");
+      var moreText = document.getElementById("more1");
+      var btnText = document.getElementById("myBtn1");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Show more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Show less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    function myFunction2() {
+      var dots = document.getElementById("dots2");
+      var moreText = document.getElementById("more2");
+      var btnText = document.getElementById("myBtn2");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Show more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Show less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>    
+</body>
+</html>
